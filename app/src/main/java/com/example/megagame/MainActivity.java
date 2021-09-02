@@ -163,7 +163,7 @@ public class MainActivity extends AppCompatActivity {
             enteredValue = Integer.parseInt(str_number);
             lbl_Output.append("  " + str_number + "\r\n");
 
-
+            Log.i("DEBUG", "hey");
             score++;
             if (Activity2.gamemode == "classique") {
                 Log.i("DEBUG", "hey");
