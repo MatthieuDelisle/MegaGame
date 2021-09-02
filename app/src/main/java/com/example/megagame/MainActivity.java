@@ -165,6 +165,7 @@ public class MainActivity extends AppCompatActivity {
 
             score++;
             if (Activity2.gamemode == "classique") {
+                og.i("DEBUG", "hey");
                 pgb_Score.incrementProgressBy(1);
                 if (score == 10) {
                     gameOver();
