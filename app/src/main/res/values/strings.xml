@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">MegaGame</string>
+    <string name="lblTitle">"Trouvez le nombre entre 1 et 100 ! "</string>
+    <string name="btn_Compare">Comparer</string>
+    <string name="str_greater">C\'est plus !</string>
+    <string name="str_lower">C\'est moins !</string>
+    <string name="str_congrats">\"Vous avez gagné ! \"</string>
+    <string name="str_msg">Félicitations, vous avez trouvé en %d coups ! Rejouer ? </string>
+    <string name="str_Yes">Oui</string>
+    <string name="str_No">Non</string>
+    <string name="str_gameOver">Game Over</string>
+    <string name="str_gameOverMsg">Vous avez dépassé vos 10 coups ! Vous avez perdu. Rejouer ?</string>
+    <string name="str_mode_classique">Mode classique</string>
+    <string name="str_title">Jeu du plus ou moins</string>
+    <string name="str_firesix">par FireSix</string>
+    <string name="str_montre">Mode contre la montre</string>
+    <string name="str_temps_imparti">Vous avez dépassé le temps imparti ! Rejouer ?</string>
+    <string name="str_secondes">secondes</string>
+    <string name="Mode_devine_le_prix">Mode devine le prix</string>
+
+</resources>
