@@ -163,9 +163,10 @@ public class MainActivity extends AppCompatActivity {
             enteredValue = Integer.parseInt(str_number);
             lbl_Output.append("  " + str_number + "\r\n");
 
+
             score++;
             if (Activity2.gamemode == "classique") {
-                og.i("DEBUG", "hey");
+                Log.i("DEBUG", "hey");
                 pgb_Score.incrementProgressBy(1);
                 if (score == 10) {
                     gameOver();
