@@ -47,6 +47,28 @@ public class Mode_devine_prix extends AppCompatActivity {
                switch (imageID){
                    case 1:
                        Answer(false);
+                       break;
+                   case 2:
+                       Answer(false);
+                       break;
+                   case 3:
+                       Answer(true);
+                       break;
+                   case 4:
+                       Answer(false);
+                       break;
+                   case 5:
+                       Answer(false);
+                       break;
+                   case 6:
+                       Answer(false);
+                       break;
+                   case 7:
+                       Answer(false);
+                       break;
+                   case 8:
+                       Answer(false);
+                       break;
                }
            }
        });
@@ -55,8 +77,30 @@ public class Mode_devine_prix extends AppCompatActivity {
             public void onClick(View view) {
 
                 switch (imageID){
-                    case 1:
+                    case 1 3:
                         Answer(false);
+                        break;
+                    case 2:
+                        Answer(true);
+                        break;
+                    case 3:
+                        Answer(false);
+                        break;
+                    case 4:
+                        Answer(false);
+                        break;
+                    case 5:
+                        Answer(true);
+                        break;
+                    case 6:
+                        Answer(false);
+                        break;
+                    case 7:
+                        Answer(false);
+                        break;
+                    case 8:
+                        Answer(true);
+                        break;
                 }
             }
         });
@@ -67,6 +111,28 @@ public class Mode_devine_prix extends AppCompatActivity {
                 switch (imageID){
                     case 1:
                         Answer(false);
+                        break;
+                    case 2:
+                        Answer(false);
+                        break;
+                    case 3:
+                        Answer(false);
+                        break;
+                    case 4:
+                        Answer(false);
+                        break;
+                    case 5:
+                        Answer(false);
+                        break;
+                    case 6:
+                        Answer(false);
+                        break;
+                    case 7:
+                        Answer(false);
+                        break;
+                    case 8:
+                        Answer(false);
+                        break;
                 }
             }
         });
@@ -77,6 +143,28 @@ public class Mode_devine_prix extends AppCompatActivity {
                 switch (imageID){
                     case 1:
                         Answer(true);
+                        break;
+                    case 2:
+                        Answer(false);
+                        break;
+                    case 3:
+                        Answer(false);
+                        break;
+                    case 4:
+                        Answer(true);
+                        break;
+                    case 5:
+                        Answer(false);
+                        break;
+                    case 6:
+                        Answer(true);
+                        break;
+                    case 7:
+                        Answer(true);
+                        break;
+                    case 8:
+                        Answer(false);
+                        break;
                 }
             }
         });
@@ -85,14 +173,67 @@ public class Mode_devine_prix extends AppCompatActivity {
         switch (imageID) {
             case 1:
                 img.setImageResource(R.drawable.a);
-                txt_Title.setText("Rhein II");
-                button1.setText("8 950 €");
-                button2.setText("620 €");
+                txt_Title.setText("Photographie (Rhein II)");
+                button1.setText("180,4 k €");
+                button2.setText("1,62 k €");
                 button3.setText("585,4 M €");
                 button4.setText("3,2 M €");
                 break;
             case 2:
                 img.setImageResource(R.drawable.b);
+                txt_Title.setText("Parapluie peau crocodile");
+                button1.setText("6,3 k €");
+                button2.setText("42 k €");
+                button3.setText("272 k €");
+                button4.setText("1 M €");
+                break;
+            case 3:
+                img.setImageResource(R.drawable.c);
+                txt_Title.setText("Peinture femme africaine");
+                button1.setText("6 €");
+                button2.setText("6,6 k €");
+                button3.setText("66,6 k €");
+                button4.setText("6,6 M €");
+                break;
+            case 4:
+                img.setImageResource(R.drawable.d);
+                txt_Title.setText("Guitare fait avec le même tronc de bois");
+                button1.setText("12 €");
+                button2.setText("850 €");
+                button3.setText("1,3 k €");
+                button4.setText("85 k €");
+                break;
+            case 5:
+                img.setImageResource(R.drawable.e);
+                txt_Title.setText("Vrai costume Dark Vador");
+                button1.setText("106 k €");
+                button2.setText("750 K €");
+                button3.setText("34 k €");
+                button4.setText("2,2 M €");
+                break;
+            case 6:
+                img.setImageResource(R.drawable.f);
+                txt_Title.setText("Sculpture tibétaine");
+                button1.setText("25 k €");
+                button2.setText("250 k €");
+                button3.setText("2,5 M €");
+                button4.setText("25 €");
+                break;
+            case 7:
+                img.setImageResource(R.drawable.g);
+                txt_Title.setText("Gant de Mickael Jackson");
+                button1.setText("60 K €");
+                button2.setText("650 M €");
+                button3.setText("43 M €");
+                button4.setText("350 k €");
+                break;
+            case 8:
+                img.setImageResource(R.drawable.h);
+                txt_Title.setText("Diamant Pink Star");
+                button1.setText("69 €");
+                button2.setText("69 M €");
+                button3.setText("690 €");
+                button4.setText("6,9 k €");
                 break;
 
         }
