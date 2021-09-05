@@ -85,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
         retryAlert.setTitle(R.string.app_name);
         retryAlert.setMessage(getString(R.string.str_msg, score));
 
-        //retryAlert.setCancelable(false);
+        retryAlert.setCancelable(false);
         retryAlert.setCanceledOnTouchOutside(false);
 
         retryAlert.setButton(AlertDialog.BUTTON_POSITIVE, getString(R.string.str_Yes), new AlertDialog.OnClickListener() {
@@ -127,7 +127,7 @@ public class MainActivity extends AppCompatActivity {
         else if (Activity2.gamemode == "montre"){
             gameOver.setMessage(getString(R.string.str_temps_imparti));
         }
-        //gameOver.setCancelable(false);
+        gameOver.setCancelable(false);
         gameOver.setCanceledOnTouchOutside(false);
 
         gameOver.setButton(AlertDialog.BUTTON_POSITIVE, getString(R.string.str_Yes), new AlertDialog.OnClickListener() {
@@ -163,10 +163,8 @@ public class MainActivity extends AppCompatActivity {
             enteredValue = Integer.parseInt(str_number);
             lbl_Output.append("  " + str_number + "\r\n");
 
-
             score++;
             if (Activity2.gamemode == "classique") {
-                Log.i("DEBUG", "hey");
                 pgb_Score.incrementProgressBy(1);
                 if (score == 10) {
                     gameOver();

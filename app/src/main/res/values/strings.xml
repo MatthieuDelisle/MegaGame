@@ -17,5 +17,8 @@
     <string name="str_temps_imparti">Vous avez dépassé le temps imparti ! Rejouer ?</string>
     <string name="str_secondes">secondes</string>
     <string name="Mode_devine_le_prix">Mode devine le prix</string>
+    <string name="str_continuer">Continuer</string>
+    <string name="str_good_answer">C\'est la bonne réponse ! Continuer ?</string>
+    <string name="str_wrong_answer">C\'est une mauvaise réponse ! Continuer ?</string>
 
 </resources>
