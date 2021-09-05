@@ -22,6 +22,7 @@ public class Mode_devine_prix extends AppCompatActivity {
     private Button button3;
     private Button button4;
     private TextView txt_Title;
+    private TextView txt_Score;
     private ImageView img;
     private int imageID=1;
     private int Score=0;
@@ -36,6 +37,8 @@ public class Mode_devine_prix extends AppCompatActivity {
         button3 = (Button) findViewById(R.id.button9);
         button4 = (Button) findViewById(R.id.button10);
         txt_Title = (TextView) findViewById(R.id.textView4);
+        txt_Score = (TextView) findViewById(R.id.textView3);
+        txt_Score.setText("Score : "+Score);
         img = (ImageView) findViewById(R.id.image);
 
        setImage(imageID, img);
@@ -77,7 +80,7 @@ public class Mode_devine_prix extends AppCompatActivity {
             public void onClick(View view) {
 
                 switch (imageID){
-                    case 1 3:
+                    case 1:
                         Answer(false);
                         break;
                     case 2:
@@ -197,7 +200,7 @@ public class Mode_devine_prix extends AppCompatActivity {
                 break;
             case 4:
                 img.setImageResource(R.drawable.d);
-                txt_Title.setText("Guitare fait avec le même tronc de bois");
+                txt_Title.setText("Guitare faite avec le même tronc de bois");
                 button1.setText("12 €");
                 button2.setText("850 €");
                 button3.setText("1,3 k €");
@@ -236,13 +239,30 @@ public class Mode_devine_prix extends AppCompatActivity {
                 button4.setText("6,9 k €");
                 break;
 
+
+
         }
     }
+    private void end(){
+        AlertDialog game_finished = new AlertDialog.Builder(this).create();
+        game_finished.setCancelable(false);
+        game_finished.setCanceledOnTouchOutside(false);
+        game_finished.setMessage("Vous avez terminé ! Votre score : "+Score + " sur 8");
+        game_finished.setButton(AlertDialog.BUTTON_NEUTRAL,getString(R.string.str_Ok), new AlertDialog.OnClickListener(){
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                finish();
+            }
+        });
+
+        game_finished.show();
+        }
     private void Answer(boolean win){
         AlertDialog response= new AlertDialog.Builder(this).create();
         if (win){
             response.setMessage(getString(R.string.str_good_answer));
             Score++;
+            txt_Score.setText("Score : "+Score);
         }
         else{
             response.setMessage(getString(R.string.str_wrong_answer));
@@ -254,6 +274,9 @@ public class Mode_devine_prix extends AppCompatActivity {
             public void onClick(DialogInterface dialogInterface, int i) {
                 imageID++;
                 setImage(imageID, img);
+                if (imageID==9){
+                    end();
+                }
             }
         });
         response.setButton(AlertDialog.BUTTON_NEGATIVE, getString(R.string.str_No), new AlertDialog.OnClickListener() {

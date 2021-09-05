@@ -20,5 +20,6 @@
     <string name="str_continuer">Continuer</string>
     <string name="str_good_answer">C\'est la bonne réponse ! Continuer ?</string>
     <string name="str_wrong_answer">C\'est une mauvaise réponse ! Continuer ?</string>
+    <string name="str_Ok">Ok</string>
 
 </resources>
